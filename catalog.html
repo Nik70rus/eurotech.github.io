@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЕВРОТЕХ | Продукция из СВМПЭ</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background-color: #fbfbfb; color: #1e2b3f; line-height: 1.5; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 70px 0; }
+    h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
+    h1 { font-size: 2.8rem; margin-bottom: 20px; }
+    h1:after { content: ''; display: block; width: 70px; height: 4px; background: #f15a24; margin-top: 15px; }
+    
+    /* ШАПКА и ФУТЕР (копируем из index.html) */
+    .header { background: white; box-shadow: 0 4px 20px rgba(0,0,0,0.02); position: sticky; top: 0; z-index: 100; padding: 16px 0; }
+    .header .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .logo { font-size: 1.8rem; font-weight: 700; font-family: 'Roboto Condensed', sans-serif; color: #1e2b3f; text-decoration: none; }
+    .logo span { color: #f15a24; }
+    .nav { display: flex; gap: 40px; font-weight: 500; }
+    .nav a { text-decoration: none; color: #1e2b3f; transition: 0.2s; }
+    .nav a:hover, .nav a.active { color: #f15a24; }
+    .header-contacts { display: flex; align-items: center; gap: 20px; }
+    .small-btn { background: #f0f4fa; color: #1e2b3f; padding: 10px 22px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; text-decoration: none; }
+    .small-btn i { margin-right: 8px; color: #f15a24; }
+    .footer { background: #1e2b3f; color: white; padding: 50px 0 20px; margin-top: 60px; }
+    .footer .container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    .footer h4 { color: #f15a24; margin-bottom: 20px; }
+    .footer a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; }
+    .footer a:hover { color: #f15a24; }
+    .footer-bottom { grid-column: 1 / -1; text-align: center; padding-top: 40px; border-top: 1px solid #334; color: #99a; }
+
+    /* Каталог */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .catalog-card {
+      background: white;
+      border-radius: 30px;
+      padding: 30px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.03);
+      border: 1px solid #eef2f6;
+      transition: 0.2s;
+    }
+    .catalog-card:hover {
+      transform: translateY(-5px);
+      border-color: #f15a24;
+    }
+    .catalog-icon {
+      font-size: 2.5rem;
+      color: #f15a24;
+      margin-bottom: 20px;
+    }
+    .catalog-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .catalog-card p {
+      color: #4a5a72;
+      margin-bottom: 20px;
+    }
+    .catalog-tag {
+      display: inline-block;
+      background: #fff0e8;
+      color: #f15a24;
+      padding: 5px 15px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 900px) {
+      .catalog-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav { display: none; }
+    }
+    @media (max-width: 500px) {
+      .catalog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">ЕВРО<span>ТЕХ</span></a>
+    <div class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html" class="active">Продукция</a>
+      <a href="svmpe.html">СВМПЭ</a>
+      <a href="projects.html">Проекты</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+    <div class="header-contacts">
+      <i class="fas fa-phone-alt"></i> +7 (913) 872-33-34
+      <a href="contacts.html#order" class="small-btn"><i class="fas fa-file-pdf"></i> КП онлайн</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h1>Продукция из СВМПЭ</h1>
+    <div class="subhead">Изготавливаем детали любой сложности по чертежам заказчика</div>
+    
+    <div class="catalog-grid">
+      <div class="catalog-card">
+        <div class="catalog-icon"><i class="fas fa-cog"></i></div>
+        <h3>Втулки и ролики</h3>
+        <p>Скольжения, опорные, направляющие. Высокая износостойкость, низкий коэффициент трения.</p>
+        <span class="catalog-tag">от 3 дней</span>
+      </div>
+      <div class="catalog-card">
+        <div class="catalog-icon"><i class="fas fa-arrows-alt-h"></i></div>
+        <h3>Направляющие</h3>
+        <p>Для конвейеров, цепей, транспортёров. Прямые и радиусные, любых размеров.</p>
+        <span class="catalog-tag">до 6 м</span>
+      </div>
+      <div class="catalog-card">
+        <div class="catalog-icon"><i class="fas fa-cut"></i></div>
+        <h3>Скребки и ножи</h3>
+        <p>Для конвейеров, тесторезок, куттеров. Пищевой допуск, острая кромка.</p>
+        <span class="catalog-tag">пищевые</span>
+      </div>
+      <div class="catalog-card">
+        <div class="catalog-icon"><i class="fas fa-table"></i></div>
+        <h3>Плиты и столешницы</h3>
+        <p>Разделочные доски, рабочие поверхности, футеровочные плиты.</p>
+        <span class="catalog-tag">до 3×2 м</span>
+      </div>
+      <div class="catalog-card">
+        <div class="catalog-icon"><i class="fas fa-tasks"></i></div>
+        <h3>Футеровка</h3>
+        <p>Защита бункеров, желобов, конвейеров от абразивного износа и налипания.</p>
+        <span class="catalog-tag">PE9000</span>
+      </div>
+      <div class="catalog-card">
+        <div class="catalog-icon"><i class="fas fa-grip-vertical"></i></div>
+        <h3>Уплотнения</h3>
+        <p>Планки, лезвия, шаберы, уплотнители для бумагоделательных машин.</p>
+        <span class="catalog-tag">ЦБК</span>
+      </div>
+      <div class="catalog-card">
+        <div class="catalog-icon"><i class="fas fa-cube"></i></div>
+        <h3>Опоры скольжения</h3>
+        <p>Подшипники скольжения, вкладыши, опорные элементы для спецтехники.</p>
+        <span class="catalog-tag">ударопрочные</span>
+      </div>
+      <div class="catalog-card">
+        <div class="catalog-icon"><i class="fas fa-industry"></i></div>
+        <h3>Детали экскаваторов</h3>
+        <p>Втулки, подкладки под аутригеры, направляющие для горной техники.</p>
+        <span class="catalog-tag">‑60°C</span>
+      </div>
+      <div class="catalog-card">
+        <div class="catalog-icon"><i class="fas fa-dice-d6"></i></div>
+        <h3>Полуфабрикаты</h3>
+        <p>Листы, прутки, блоки СВМПЭ для механической обработки.</p>
+        <span class="catalog-tag">склад в Москве</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div><h4>О компании</h4><a href="svmpe.html">О СВМПЭ</a><a href="projects.html">Наши работы</a><a href="contacts.html">Реквизиты</a></div>
+    <div><h4>Продукция</h4><a href="catalog.html">Втулки и ролики</a><a href="catalog.html">Направляющие</a><a href="catalog.html">Футеровка</a></div>
+    <div><h4>Контакты</h4><p>+7 (913) 872-33-34</p><p>shabal4544@gmail.com</p><p>Москва, Звёздный б-р, 21</p><p>ОГРН 1067759249392</p><p>ИНН 7733584470</p></div>
+    <div class="footer-bottom">© ООО "ЕВРОТЕХ" 2006–2025</div>
+  </div>
+</footer>
+
+</body>
+</html>

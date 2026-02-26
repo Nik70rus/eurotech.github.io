@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЕВРОТЕХ | СВМПЭ PolyTech PE</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* те же общие стили */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fbfbfb; color: #1e2b3f; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 70px 0; }
+    h1 { font-size: 2.8rem; margin-bottom: 20px; }
+    h1:after { content: ''; display: block; width: 70px; height: 4px; background: #f15a24; margin-top: 15px; }
+    .subhead { font-size: 1.2rem; color: #4a5a72; margin-bottom: 48px; }
+    
+    /* ШАПКА и ФУТЕР как в index.html */
+    .header { background: white; box-shadow: 0 4px 20px rgba(0,0,0,0.02); position: sticky; top: 0; padding: 16px 0; }
+    .header .container { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.8rem; font-weight: 700; font-family: 'Roboto Condensed', sans-serif; color: #1e2b3f; text-decoration: none; }
+    .logo span { color: #f15a24; }
+    .nav { display: flex; gap: 40px; }
+    .nav a { text-decoration: none; color: #1e2b3f; }
+    .nav a:hover, .nav a.active { color: #f15a24; }
+    .header-contacts { display: flex; gap: 20px; }
+    .small-btn { background: #f0f4fa; padding: 10px 22px; border-radius: 30px; text-decoration: none; color: #1e2b3f; }
+    .footer { background: #1e2b3f; color: white; padding: 50px 0 20px; margin-top: 60px; }
+    .footer .container { display: grid; grid-template-columns: repeat(3,1fr); gap: 40px; }
+    .footer h4 { color: #f15a24; }
+    .footer a { color: #ccc; text-decoration: none; display: block; }
+    .footer-bottom { grid-column: 1/-1; text-align: center; padding-top: 40px; border-top: 1px solid #334; }
+
+    /* Характеристики */
+    .props-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      margin: 50px 0;
+    }
+    .prop-item {
+      background: white;
+      padding: 30px;
+      border-radius: 30px;
+      border: 1px solid #eef2f6;
+    }
+    .prop-item h3 { color: #f15a24; margin-bottom: 20px; font-size: 1.8rem; }
+    .prop-list { list-style: none; }
+    .prop-list li { margin-bottom: 15px; display: flex; gap: 15px; align-items: center; }
+    .prop-list i { color: #f15a24; width: 24px; }
+
+    .temp-range {
+      background: linear-gradient(145deg, #1e2b3f, #152234);
+      color: white;
+      padding: 50px;
+      border-radius: 50px;
+      margin: 50px 0;
+    }
+    .temp-range h3 { font-size: 2rem; }
+    .temp-big { font-size: 4rem; color: #f15a24; font-weight: 700; }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">ЕВРО<span>ТЕХ</span></a>
+    <div class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Продукция</a>
+      <a href="svmpe.html" class="active">СВМПЭ</a>
+      <a href="projects.html">Проекты</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+    <div class="header-contacts">
+      <i class="fas fa-phone-alt"></i> +7 (913) 872-33-34
+      <a href="contacts.html#order" class="small-btn"><i class="fas fa-file-pdf"></i> КП онлайн</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h1>Сверхвысокомолекулярный полиэтилен (СВМПЭ)</h1>
+    <div class="subhead">PolyTech PE — конструкционный полимер с уникальным сочетанием свойств</div>
+    
+    <div style="background: white; border-radius: 50px; padding: 50px; margin-bottom: 50px;">
+      <p style="font-size: 1.2rem; line-height: 1.8;">СВМПЭ (UHMWPE) — это полимер с молекулярной массой более 1 млн г/моль, что придаёт ему исключительную износостойкость, ударную прочность и низкий коэффициент трения. Материал не впитывает влагу, химически стоек и сохраняет свойства при криогенных температурах.</p>
+    </div>
+
+    <div class="props-grid">
+      <div class="prop-item">
+        <h3>Физико-механические</h3>
+        <ul class="prop-list">
+          <li><i class="fas fa-check-circle"></i> Плотность: 0.93–0.94 г/см³</li>
+          <li><i class="fas fa-check-circle"></i> Предел прочности: 40–50 МПа</li>
+          <li><i class="fas fa-check-circle"></i> Относительное удлинение: 350%</li>
+          <li><i class="fas fa-check-circle"></i> Модуль упругости: 800 МПа</li>
+        </ul>
+      </div>
+      <div class="prop-item">
+        <h3>Эксплуатационные</h3>
+        <ul class="prop-list">
+          <li><i class="fas fa-check-circle"></i> Коэф. трения по стали: 0.12–0.15</li>
+          <li><i class="fas fa-check-circle"></i> Истирание: 70 ед. (мин. 100)</li>
+          <li><i class="fas fa-check-circle"></i> Водопоглощение: 0.01%</li>
+          <li><i class="fas fa-check-circle"></i> Пищевой допуск (EU, FDA)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="temp-range">
+      <h3>Рабочие температуры</h3>
+      <div style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap; margin-top: 30px;">
+        <div><span class="temp-big">–200°C</span><br>криостойкость</div>
+        <div><i class="fas fa-arrow-right fa-2x"></i></div>
+        <div><span class="temp-big">+80°C</span><br>длительная эксплуатация</div>
+        <div><i class="fas fa-arrow-right fa-2x"></i></div>
+        <div><span class="temp-big">+120°C</span><br>кратковременно</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 50px;">
+      <h2>Химическая стойкость</h2>
+      <div class="industry-tags" style="margin-top: 30px;">
+        <span class="tag">Кислоты</span>
+        <span class="tag">Щелочи</span>
+        <span class="tag">Соли</span>
+        <span class="tag">Растворители</span>
+        <span class="tag">Масла</span>
+        <span class="tag">Нефтепродукты</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div><h4>О компании</h4><a href="svmpe.html">О СВМПЭ</a><a href="projects.html">Наши работы</a><a href="contacts.html">Реквизиты</a></div>
+    <div><h4>Продукция</h4><a href="catalog.html">Втулки и ролики</a><a href="catalog.html">Направляющие</a><a href="catalog.html">Футеровка</a></div>
+    <div><h4>Контакты</h4><p>+7 (913) 872-33-34</p><p>shabal4544@gmail.com</p><p>Москва, Звёздный б-р, 21</p><p>ОГРН 1067759249392 | ИНН 7733584470</p></div>
+    <div class="footer-bottom">© ООО "ЕВРОТЕХ" 2006–2025</div>
+  </div>
+</footer>
+
+</body>
+</html>
